@@ -35,11 +35,15 @@ def question_2 ():
                         pass
                 date = datetime.strptime( str_date, "%d/%b/%Y" )
                 by_weekday[date.weekday()] += 1
-       	print ("2. How many requests were made on each day?")	
-	print by_weekday
-		
-                     
-
 	
+       	print ("2. How many requests were made on each day?")	
+	print 'Monday:   ', by_weekday[0]
+	print 'Tuesday:  ', by_weekday[1]
+	print 'Wednesday:', by_weekday[2]
+	print 'Thursday: ', by_weekday[3]
+	print 'Friday:   ', by_weekday[4]
+	print 'Saturday: ', by_weekday[5]
+	print 'Sunday:   ', by_weekday[6]
+
 question_1()
 question_2()
